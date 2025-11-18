@@ -1,0 +1,253 @@
+body {
+    background-image: url("background-image.webp");
+    background-image: no-repeat;
+    background-size: 100vw 100vh;
+}
+#image{
+    margin-top: 15vh;
+    height: 12vh;
+    width: 12vh;
+}
+.TicTacToe h1{
+    margin-top: 0px;
+}
+.TicTacToe {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(71, 158, 129);
+    
+}
+.mainpage {
+    text-align: center;
+    justify-content: center;
+}
+.Players {
+    font-size: 30px;
+    color: darkslategrey;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.Players input {
+    border: 0px solid darkolivegreen;
+    border-bottom: 2px solid darkolivegreen;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    width: 240px;
+}
+#name1 {
+    color: darkslategrey;
+    font-weight: bold;
+}
+#name2 {
+    color: darkslategrey;
+    font-weight: bold;
+}
+.button-start button {
+    border: none;
+    font-size: 20px;
+    color: darkslategrey;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 13px;
+    background-color: lightgreen;
+}
+.button-start :active {
+  font-weight: bold;
+}
+#Start {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 250px;
+}
+#without {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 250px;
+}
+.game-page{
+    text-align: center;
+}
+#gamediv {
+    display: none;
+}
+.score {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    margin: 10px;
+    
+}
+#player1 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 20px;
+    outline: none;
+    font-size: 27px;
+    width: 250px;
+    height: 40px;
+    padding: 2px;
+    background-color: white;
+    color: red;
+    
+}
+#player2 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 20px;
+    outline: none;
+    font-size: 27px;
+    height: 40px;
+    width: 250px;
+    padding: 2px;
+    background-color: white;
+    color: rgb(79, 184, 149);
+
+}
+
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.game {
+    height: 50vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    justify-content: center;
+}
+.box {
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: rgb(50, 25, 25);
+    font-weight: bold;
+    background-color: rgb(255, 255, 103);
+}
+
+.box:hover {
+    background-color: lightpink;
+}
+.last-button button {
+    font-size: 20px;
+    color: darkslategrey;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 13px;
+    background-color: lightgreen;
+}
+.last-button {
+    margin-top: 40px;
+    justify-content: center;
+    gap: 40px;
+}
+.last-button :active {
+  font-weight: bold;
+}
+#Reset {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 250px;
+}
+#Restart {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgb(0, 0, 0,0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 250px;
+}
+.row :hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+#winner {
+    height: 50px;
+    width: 550px;
+    margin: auto;
+    font-size: 50px;
+    color:rgb(77, 6, 2);
+    font-weight: bold;
+    
+
+}
+@media screen and (max-width: 768px) {
+    
+    .Players input {
+        width: 80%; 
+    }
+    
+    .button-start button {
+        width: 80%;
+        max-width: 300px; 
+        padding: 10px 20px; 
+        font-size: 18px; 
+    }
+    
+    #Start, #without {
+        width: 80%; 
+    }
+
+    
+    #winner {
+        font-size: 8vw; 
+        width: 90%; 
+        margin: 0px auto; 
+    }
+
+    .score {
+         
+        gap: 5px;
+        margin: 5px 0;
+    }
+    
+    #player1, #player2 {
+        width: 80%; 
+        max-width: 300px; 
+        margin: 0 auto; 
+        font-size: 20px; 
+        height: auto;
+        padding: 5px;
+    }
+    .container {
+        height: auto; 
+        padding: 5px 0; 
+    }
+    .game {
+        height: 60vw; 
+        width: 60vw; 
+        gap: 2vw;
+        max-width: 250px; 
+        max-height: 250px;
+    }
+
+    .box {
+        height: 22vw; 
+        width: 20vw;
+        font-size: 12vw; 
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .last-button {
+        margin-top: 20px;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+
+    } 
+    .last-button button {
+        width: 80%; 
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+    #Reset, #Restart {
+        width: 80%;
+    }
+}
+    

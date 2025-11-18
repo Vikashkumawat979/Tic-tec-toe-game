@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c1b99efeae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainpage" id="formdiv">
+        <div class="gamelogo"> 
+            <img id="image" src="gamelogo.png" alt=""><br><br>
+        </div>
+        <div class="TicTacToe">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="Players">
+            <label><i class="fa-solid fa-user"></i></label>
+            <input id="name1" type="text" placeholder="Player1" size="30px"><br><br>
+
+            <label><i class="fa-solid fa-user"></i></label>
+            <input id="name2" type="text" placeholder="Player2" size="30px"><br><br>
+        </div>
+        <div class="button-start">
+            <button id="Start" onclick="setName(1)">Start Game</button><br><br><br>
+            <button id="without" onclick="setName(0)">Start without Name</button>
+        </div>
+    </div><br><br>
+    <div class="game-page" id="gamediv">
+        <div id="winner"></div>
+        <div class="score"> 
+            <div id="player1"> <span id="player1-name"> X </span> : <span id="p1-score"> -</span></div>
+            <div id="player2"> <span id="player2-name"> O </span> : <span id="p2-score"> -</span></div>
+        </div><br><br>
+        <div class="container">
+            <div class="game">
+                <button class="box" id="0"></button>
+                <button class="box" id="1"></button>
+                <button class="box" id="2"></button>
+                <button class="box" id="3"></button>
+                <button class="box" id="4"></button>
+                <button class="box" id="5"></button>
+                <button class="box" id="6"></button>
+                <button class="box" id="7"></button>
+                <button class="box" id="8"></button>
+            </div>
+        </div>
+        <div class="last-button">
+            <button id="Reset" onclick="reset()">Reset Game</button><br><br>
+            <button id="Restart" onclick="restart()">Restart Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
